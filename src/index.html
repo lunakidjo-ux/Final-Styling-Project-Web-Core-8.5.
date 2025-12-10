@@ -14,295 +14,151 @@
 				<link rel="stylesheet" href="styles.css" />
 				<title>CPS</title>
   </head>
-  <body>
-		<aside class="sidebar">
-				<header class="sidebar__top">
-					<button class="sidebar__icon">
-						<img src="./icons/ic-Xburger.svg" alt="Close menu">
-					</button>
-					<div class="sidebar__logo">
-						<img src="./icons/ic-Logo.svg" alt="CPS Logo">
-					</div>
-					<button class="sidebar__icon">
-						<img src="./icons/ic-search.svg" alt="Search">
-					</button>
-				</header>
-				<nav class="sidebar__menu">
-					<button class="sidebar__menu-item marker">
-						<img src="./icons/ic-highlight.svg" alt="highlight" class="highlight"> Equipment repair
-					</button>
-					<button class="sidebar__menu-item">Services and solutions</button>
-					<button class="sidebar__menu-item">Corporate clients</button>
-					<button class="sidebar__menu-item">Equipment sellers</button>
-					<button class="sidebar__menu-item">Partners</button>
-					<button class="sidebar__menu-item">Manufacturers</button>
-					<button class="sidebar__menu-item">Our service centres</button>
-					<button class="sidebar__menu-item">Contacts</button>
-				</nav>
+  
+<body class="page">
 
-				<div class="space"></div>
+  <!-- SIDEBAR (desktop or slide-in on mobile) -->
+  <aside class="sidebar sidebar--expanded" aria-label="Main menu">
+    <div class="sidebar__top">
+      <button class="sidebar__btn sidebar__btn--close" type="button" aria-label="Close menu">
+        <img src="./img/ic-Xburger.svg" alt="">
+      </button>
 
-				<footer class="sidebar__bottom">
-					<div class="sidebar__icons">
-						<button><img src="./icons/ic-call.svg" alt="Call"></button>
-						<button><img src="./icons/ic-chat.svg" alt="Chat"></button>
-						<button><img src="./icons/ic-profile.svg" alt="Profile"></button>
-					</div>
+      <div class="sidebar__brand">
+        <img src="./img/ic-Logo.svg" alt="CPS logo" class="sidebar__logo">
+      </div>
 
-					<p class="sidebar__mail">mail@cps.com</p>
-					<p class="sidebar__phone">8 800 890 8900</p>
+      <button class="sidebar__btn sidebar__btn--search" type="button" aria-label="Search">
+        <img src="./img/ic-search..svg" alt="">
+      </button>
+    </div>
 
-					<div class="sidebar__lang">
-						<a href="#">RU</a>
-						<a href="#">EN</a>
-						<a href="#">CH</a>
-					</div>
-				</footer>
-			</aside>
-			<header class="header">
-				<button class="header__icon header__icon--menu" aria-label="Menu">
-					<img src="./img/ic-burger.svg" alt="Menu" />
-				</button>
-				<div class="header__logo">
-					<img src="./img/ic-Logo.svg" alt="CPS Logo" />
-				</div>
+    <nav class="sidebar__nav" aria-label="Main navigation">
+      <button class="sidebar__nav-item sidebar__nav-item--active">
+        <img src="./img/ic-highlight.svg" alt="" class="sidebar__nav-item-icon">Equipment repair
+      </button>
+      <button class="sidebar__nav-item">Services and solutions</button>
+      <button class="sidebar__nav-item">Corporate clients</button>
+      <button class="sidebar__nav-item">Equipment sellers</button>
+      <button class="sidebar__nav-item">Partners</button>
+      <button class="sidebar__nav-item">Manufacturers</button>
+      <button class="sidebar__nav-item">Our service centres</button>
+      <button class="sidebar__nav-item">Contacts</button>
+    </nav>
 
-				<div class="header__icons header__icon--group">
-					<button class="header__icon header__icon--call" aria-label="Request">
-						<img src="./img/ic-call.svg" alt="Call icon" />
-					</button>
-					<button class="header__icon header__icon--chat" aria-label="Request">
-						<img src="./img/ic-chat.svg" alt="Chat icon" />
-					</button>
-					<button class="header__icon header__icon--profile" aria-label="Request">
-						<img src="./img/ic-profile.svg" alt="Profile icon" />
-					</button>
+    <div class="sidebar__bottom">
+      <div class="sidebar__actions">
+        <button class="sidebar__action"><img src="./img/ic-call.svg" alt="Call"></button>
+        <button class="sidebar__action"><img src="./img/ic-chat.svg" alt="Chat"></button>
+        <button class="sidebar__action"><img src="./img/ic-profile.svg" alt="Profile"></button>
+      </div>
 
-					<div class="divider"></div>
+      <div class="sidebar__contact">
+        <a class="sidebar__email" href="mailto:mail@cps.com">mail@cps.com</a>
+        <div class="sidebar__phone">8 800 890 8900</div>
+        <div class="sidebar__langs">
+          <a href="#">RU</a> <a href="#">EN</a> <a href="#">CH</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <!-- MAIN -->
+  <main class="main">
+    <section class="services">
+      <div class="services__header">
+        <div class="services__title-wrap">
+          <img class="services__marker" src="./img/ic-highlight.svg" alt="">
+          <h1 class="services__title">Services and support</h1>
+        </div>
 
-					<button class="header__icon header__icon--repair" aria-label="Repair status">
-						<img src="./img/ic-Repair.svg" alt="Repair icon" />
-					</button>
-					<button class="header__icon header__icon--search" aria-label="Search">
-						<img src="./img/ic-search..svg" alt="Search icon" />
-					</button>
-				</div>
-			</header>
+        <div class="services__controls">
+          <div class="services__control">
+            <span>Submit a request</span>
+            <button class="btn-icon"><img src="./img/ic-Repair.svg" alt=""></button>
+          </div>
 
-			<main class="main">
-				<section class="services"> <!--SHOULD I ADD SECTION FOR EACH PART?(like the swiper,grids,...)-->
-					<div class="services__header">
-							<div class="marker">
-								<img
-								class="highlight"
-								src="./img/ic-highlight.svg"
-								alt="highlight"
-								/>
-								<h1 class="services__title">Services and support</h1>
-							</div>
-							<div class="services__header-buttons">
-								<div class="services__header-buttons-item">
-									<span>Submit a request</span>
-									<button
-									class="header__icon header__icon--repair"
-									aria-label="Repair status"
-									>
-									<img src="./img/ic-Repair.svg" alt="Repair icon" />
-									</button>
-								</div>
-								<div class="services__header-buttons-item">
-									<span>Repair status</span>
-									<button
-									class="header__icon header__icon--search"
-									aria-label="Search"
-									>
-									<img src="./img/ic-search..svg" alt="Search icon" />
-									</button>
-								</div>
-							</div>
-					</div>
-					<nav class="services__menu">
-						<button class="services__menu-item">Devices we repair</button>
-						<button class="services__menu-item">Additional services</button>
-						<button class="services__menu-item">Service prices</button>
-						<button class="services__menu-item">Special prices</button>
-					</nav>
-					<div class="services__content">
-						<div class="services__text">
-							
-							<p>
-								We are an authorised service centre for Dell equipment repairs. Only with us can you repair your Dell laptop with the official manufacturer’s warranty.
-							</p>
-							<p>
-								We have been successfully operating since 1992 and have earned a reputation as a reliable partner.
-							</p>
+          <div class="services__control">
+            <span>Repair status</span>
+            <button class="btn-icon"><img src="./img/ic-search..svg" alt=""></button>
+          </div>
+        </div>
+      </div>
 
-							<div class="more">
-								<img src="./img/ic-arrows.svg" alt="arrows">
-								<a href="#" class="services__readmore">Read more</a>
-							</div>  
-						</div>
+      <nav class="services__tabs" aria-label="Service tabs">
+        <button class="services__tab">Devices we repair</button>
+        <button class="services__tab">Additional services</button>
+        <button class="services__tab">Service prices</button>
+        <button class="services__tab">Special prices</button>
+      </nav>
 
-						<figure class="services__image">
-							<img src="./img/img.png" alt="CPS Logo Sign" />
-						</figure>
-					</div>
-				</section>
+      <div class="services__content">
+        <div class="services__text">
+          <p>We are an authorised service centre for Dell equipment repairs. Only with us can you repair your Dell laptop with the official manufacturer’s warranty.</p>
+          <p>We have been successfully operating since 1992 and have earned a reputation as a reliable partner.</p>
 
-				<h2 class="title">REPAIR OF EQUIPMENT FROM VARIOUS BRANDS</h2>
+          <a href="#" class="services__readmore">Read more →</a>
+        </div>
 
-					<div class="brands-block">
-						<div class="brands-grid">
-							<button>
-								<img src="./img/Lenovo.png" alt="Lenovo" class="brand" /><img
-									src="./img/ic-go.svg"
-									alt="go"
-									class="go"
-								/>
-							</button>
-							<button>
-								<img src="./img/Samsung.png" alt="Samsung" class="brand" /><img
-									src="./img/ic-go.svg"
-									alt="go"
-									class="go"
-								/>
-							</button>
-							<button>
-								<img src="./img/Apple.png" alt="Apple" class="brand" /><img
-									src="./img/ic-go.svg"
-									alt="go"
-									class="go"
-								/>
-							</button>
-							<button>
-								<img src="./img/ViewSonic.png" alt="ViewSonic" class="brand" /><img
-									src="./img/ic-go.svg"
-									alt="go"
-									class="go"
-								/>
-							</button>
-							<button>
-								<img src="./img/Bosch.png" alt="Bosch" class="brand" /><img
-									src="./img/ic-go.svg"
-									alt="go"
-									class="go"
-								/>
-							</button>
-							<button>
-								<img src="./img/hp.png" alt="hp" class="brand" /><img
-									src="./img/ic-go.svg"
-									alt="go"
-									class="go"
-								/>
-							</button>
-							<button class="collapsed-tablet">
-								<img src="./img/Acer.png" alt="Acer" class="brand" /><img
-									src="./img/ic-go.svg"
-									alt="go"
-									class="go"
-								/>
-							</button>
-							<button class="collapsed-tablet">
-								<img src="./img/Sony.png" alt="Sony" class="brand" /><img
-									src="./img/ic-go.svg"
-									alt="go"
-									class="go"
-								/>
-							</button>
-							<button class="collapsed-tablet">
-								<img src="./img/Lenovo.png" alt="Lenovo" class="brand" /><img
-									src="./img/ic-go.svg"
-									alt="go"
-									class="go"
-								/>
-							</button>
-							<button class="collapsed-tablet collapsed-pc">
-								<img src="./img/Samsung.png" alt="Samsung" class="brand" /><img
-									src="./img/ic-go.svg"
-									alt="go"
-									class="go"
-								/>
-							</button>
-							<button class="collapsed-tablet collapsed-pc">
-								<img src="./img/Apple.png" alt="Apple" class="brand" /><img
-									src="./img/ic-go.svg"
-									alt="go"
-									class="go"
-								/>
-							</button>
-						</div>
+        <figure class="services__figure">
+          <img src="./img/img.png" alt="CPS sign">
+        </figure>
+      </div>
+    </section>
 
-						<div class="swiper brands-swiper">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<button>
-										<img src="./img/Lenovo.png" class="brand" /><img
-											src="./img/ic-go.svg"
-											class="go"
-										/>
-									</button>
-								</div>
-								<div class="swiper-slide">
-									<button>
-										<img src="./img/Samsung.png" class="brand" /><img
-											src="./img/ic-go.svg"
-											class="go"
-										/>
-									</button>
-								</div>
-								<div class="swiper-slide">
-									<button>
-										<img src="./img/Apple.png" class="brand" /><img
-											src="./img/ic-go.svg"
-											class="go"
-										/>
-									</button>
-								</div>
-								<div class="swiper-slide">
-									<button>
-										<img src="./img/ViewSonic.png" class="brand" /><img
-											src="./img/ic-go.svg"
-											class="go"
-										/>
-									</button>
-								</div>
-								<div class="swiper-slide">
-									<button>
-										<img src="./img/Bosch.png" class="brand" /><img
-											src="./img/ic-go.svg"
-											class="go"
-										/>
-									</button>
-								</div>
-							</div>
+    <h2 class="section-title">REPAIR OF EQUIPMENT FROM VARIOUS BRANDS</h2>
 
-							<div class="swiper-pagination"></div>
-						</div>
+    <!-- BRANDS block -->
+    <section class="brands">
+      
+      <div class="brands__grid" id="brandsGrid">
+        <button class="brands__item"><img src="./img/Lenovo.png" alt="Lenovo" class="brands__logo"><img src="./img/ic-go.svg" alt="" class="brands__go"></button>
+        <button class="brands__item"><img src="./img/Samsung.png" alt="Samsung" class="brands__logo"><img src="./img/ic-go.svg" alt="" class="brands__go"></button>
+        <button class="brands__item"><img src="./img/Apple.png" alt="Apple" class="brands__logo"><img src="./img/ic-go.svg" alt="" class="brands__go"></button>
+        <button class="brands__item"><img src="./img/ViewSonic.png" alt="ViewSonic" class="brands__logo"><img src="./img/ic-go.svg" alt="" class="brands__go"></button>
+        <button class="brands__item"><img src="./img/Bosch.png" alt="Bosch" class="brands__logo"><img src="./img/ic-go.svg" alt="" class="brands__go"></button>
+        <button class="brands__item"><img src="./img/hp.png" alt="hp" class="brands__logo"><img src="./img/ic-go.svg" alt="" class="brands__go"></button>
 
-						<div class="toggle">
-							<img src="./img/ic-arrowDOWN.svg" class="arrow" />
-							<p class="toggle-text">Show all</p>
-						</div>
-					</div>
+        <!-- collapsed items only shown after "Show all" on desktop -->
+        <button class="brands__item brands__item--collapsed"> <img src="./img/Acer.png" alt="Acer" class="brands__logo"><img src="./img/ic-go.svg" alt="" class="brands__go"></button>
+        <button class="brands__item brands__item--collapsed"> <img src="./img/Sony.png" alt="Sony" class="brands__logo"><img src="./img/ic-go.svg" alt="" class="brands__go"></button>
+        <button class="brands__item brands__item--collapsed"> <img src="./img/Lenovo.png" alt="Lenovo" class="brands__logo"><img src="./img/ic-go.svg" alt="" class="brands__go"></button>
+        <button class="brands__item brands__item--collapsed brands__item--collapsed-pc"> <img src="./img/Samsung.png" alt="Samsung" class="brands__logo"><img src="./img/ic-go.svg" alt="" class="brands__go"></button>
+        <button class="brands__item brands__item--collapsed brands__item--collapsed-pc"> <img src="./img/Apple.png" alt="Apple" class="brands__logo"><img src="./img/ic-go.svg" alt="" class="brands__go"></button>
+      </div>
 
-					<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-					<script src="script.js"></script>
+      <!-- Mobile swiper (hidden on >=768px) -->
+      <div class="brands__swiper swiper" id="brandsSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <button class="brands__item"><img src="./img/Lenovo.png" alt="" class="brands__logo"><img src="./img/ic-go.svg" alt="" class="brands__go"></button>
+          </div>
+          <div class="swiper-slide">
+            <button class="brands__item"><img src="./img/Samsung.png" alt="" class="brands__logo"><img src="./img/ic-go.svg" alt="" class="brands__go"></button>
+          </div>
+          <div class="swiper-slide">
+            <button class="brands__item"><img src="./img/Apple.png" alt="" class="brands__logo"><img src="./img/ic-go.svg" alt="" class="brands__go"></button>
+          </div>
+          <div class="swiper-slide">
+            <button class="brands__item"><img src="./img/ViewSonic.png" alt="" class="brands__logo"><img src="./img/ic-go.svg" alt="" class="brands__go"></button>
+          </div>
+          <div class="swiper-slide">
+            <button class="brands__item"><img src="./img/Bosch.png" alt="" class="brands__logo"><img src="./img/ic-go.svg" alt="" class="brands__go"></button>
+          </div>
+        </div>
 
-				<h3 class="title">REPAIR OF VARIOUS TYPES OF EQUIPMENT</h3>
-					<div class="tech-block">
-						<div class="types">
-							<button class="repLap">Laptop repair</button>
-							<button class="repTab">Tablet repair</button>
-							<button class="repPC">PC repair</button>
-							<button class="repMon">Monitor repair</button>
-						</div>
-						<div class="toggle">
-								<img src="./img/ic-arrowDOWN.svg" class="arrow" />
-								<p class="toggle-text">Show all</p>
-						</div>
-					</div>
+        <div class="swiper-pagination"></div>
+      </div>
 
+      <!-- Show all toggle (desktop only) -->
+      <div class="brands__toggle">
+        <button class="brands__toggle-btn" id="brandsToggle">
+          <img src="./img/ic-arrowDOWN.svg" class="brands__toggle-icon" alt="">
+          <span class="brands__toggle-text">Show all</span>
+        </button>
+      </div>
+    </section>
 				<h4>SERVICE PRICES</h4>
+		<section class="prices">
 					<div class="price-container">
 						<div class="p-grid">
 							<div class="service__column">
@@ -330,18 +186,19 @@
 								<p class="deadline__text">30-120 min</p>
 							</div>
 							<div class="order__column">
-								<button>order</button>
-								<button>order</button>
-								<button>order</button>
-								<button>order</button>
-								<button>order</button>
+								<button class="order__btn">order</button>
+								<button class="order__btn">order</button>
+								<button class="order__btn">order</button>
+								<button class="order__btn">order</button>
+								<button class="order__btn">order</button>
 							</div>
 						</div>
 					</div>
 				
 				<p class="vat__text">All prices include VAT. The cost of repair is indicated for a single service. To receive a commercial proposal for ongoing maintenance, please submit a request.</p>
 				<button>Get a commercial proposal <img src="./img/ic-SinglePinkArrow.svg" class="Lastgo"/></button>
-      </main>
+    </section>
+			</main>
 
 			<footer>
 				<p class="footer">© 2019 CPS
