@@ -1,0 +1,2 @@
+(()=>{"use strict";console.log("It works!");const e=document.querySelector(".brands-grid"),t=document.querySelector(".toggle"),n=document.querySelector(".toggle-text"),o=document.querySelector(".arrow");t.addEventListener("click",(()=>{e.classList.toggle("expanded")?(n.textContent="Hide",o.classList.add("rotated")):(n.textContent="Show all",o.classList.remove("rotated"))})),window.innerWidth>=320&&window.innerWidth<=768&&new Swiper(".brands-swiper",{slidesPerView:1.2,spaceBetween:16,pagination:{el:".swiper-pagination",clickable:!0}})})();
+//# sourceMappingURL=bundle.js.map
