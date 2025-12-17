@@ -1,0 +1,131 @@
+.sidebar {
+  width: 320px;
+  height: 100vh;
+  background: #fff;
+  box-shadow: 4px 0 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+/* header */
+.sidebar__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*is it because of this that I can't put the logo next to Xmenu icon?*/
+}
+
+.sidebar__btn {
+  background-color: #FF3E79;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  
+}
+
+.sidebar__brand {
+  height: 32px;
+  /*I want to put it next to the Xmenu button but can't seem to find how*/
+}
+
+/*Also why is the menu not sticking to the header?*/
+
+/* Menu */
+.sidebar__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 0%;
+  margin-left: 23px;
+}
+
+.sidebar__nav-item--active {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: 0.7;
+  filter: brightness(1.1);
+}
+
+.sidebar__nav-item-icon {
+ height: 28px;
+ width: 4px; 
+ padding-right: 2p;
+}
+
+.sidebar__nav-item {
+  border: none;
+  background: none;
+  font-size: 16px;
+  text-align: left;
+  color: #1B1C21;
+  cursor: pointer;
+  left: 23px;
+}
+
+.sidebar__nav-item:hover{
+  font-weight: 700;
+  text-shadow: 1px 2px 4px gray;
+
+}
+
+
+.space {
+   height: 70px;
+}
+
+/*footer*/
+.sidebar__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar__actions {
+  display: flex;
+  gap: 12px;
+}
+
+.sidebar__action {
+  background-color: #FF3E79;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.sidebar__email {
+  font-style: medium;
+  font-size: 16px;
+}
+
+.sidebar__phone { 
+   font-style: bold;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.sidebar__langs {
+  display: flex;
+  gap: 10px;
+}
+
+.sidebar__langs a {
+  text-decoration: none;
+  color: #1B1C21;
+  opacity: 0.7;
+  transition: 0.3s ease;
+}
+
+.sidebar__langs a:hover {
+  opacity: 0.5;
+}

@@ -12,7 +12,8 @@ module.exports = {
   // Output file
   output: {
     filename: './js/bundle.js',
-    path: path.resolve(__dirname, 'dist') // Add output path
+    path: path.resolve(__dirname, 'dist'), // Add output path
+    publicPath: "/Final-Styling-Project-Web-Core-8.5./"
   },
 
   // Source maps for easier debugging

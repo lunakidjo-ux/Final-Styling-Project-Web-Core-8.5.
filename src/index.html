@@ -10,8 +10,7 @@
 				<link
 					rel="stylesheet"
 					href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-				/>
-				<link rel="stylesheet" href="styles.css" />
+				/> 
 				<title>CPS</title>
   </head>
   
@@ -52,7 +51,6 @@
         <button class="sidebar__action"><img src="./img/ic-chat.svg" alt="Chat"></button>
         <button class="sidebar__action"><img src="./img/ic-profile.svg" alt="Profile"></button>
       </div>
-
       <div class="sidebar__contact">
         <a class="sidebar__email" href="mailto:mail@cps.com">mail@cps.com</a>
         <div class="sidebar__phone">8 800 890 8900</div>
@@ -64,6 +62,33 @@
   </aside>
   <!-- MAIN -->
   <main class="main">
+        <header class="header">
+        <button class="header__icon header__icon--menu" aria-label="Menu">
+          <img src="./icons/ic-burger.svg" alt="Menu" />
+        </button>
+        <div class="header__logo">
+          <img src="./icons/ic-Logo.svg" alt="CPS Logo" />
+        </div>
+        <div class="header__icons header__icon--group">
+          <button class="header__icon header__icon--call" aria-label="call">
+            <img src="./icons/ic-call.svg" alt="Call icon" />
+          </button>
+          <button class="header__icon header__icon--chat" aria-label="chat">
+            <img src="./icons/ic-chat.svg" alt="Chat icon" />
+          </button>
+          <button class="header__icon header__icon--profile" aria-label="profile">
+            <img src="./icons/ic-profile.svg" alt="Profile icon" />
+          </button>
+          <div class="divider"></div>
+          <button class="header__icon header__icon--repair" aria-label="Repair status">
+            <img src="./icons/ic-Repair.svg" alt="Repair icon" />
+          </button>
+          <button class="header__icon header__icon--search" aria-label="Search">
+            <img src="./icons/ic-search..svg" alt="Search icon" />
+          </button>
+        </div>
+      </header>
+        
     <section class="services">
       <div class="services__header">
         <div class="services__title-wrap">
@@ -157,7 +182,46 @@
         </button>
       </div>
     </section>
-				<h4>SERVICE PRICES</h4>
+
+    <section class="repair">
+      <h4 class="repair__label">REPAIR OF VARIOUS TYPES OF EQUIPMENT</h4>
+
+      <div class="repair__list">
+        <div class="repair-card">
+          <span class="repair-card__title">Laptop repair</span>
+          <button class="repair-card__action" aria-label="Laptop repair">
+            →
+          </button>
+        </div>
+
+        <div class="repair-card">
+          <span class="repair-card__title">Tablet repair</span>
+          <button class="repair-card__action" aria-label="Tablet repair">
+            →
+          </button>
+        </div>
+
+        <div class="repair-card">
+          <span class="repair-card__title">PC repair</span>
+          <button class="repair-card__action" aria-label="PC repair">
+            →
+          </button>
+        </div>
+
+        <div class="repair-card">
+          <span class="repair-card__title">Monitor repair</span>
+          <button class="repair-card__action" aria-label="Monitor repair">
+            →
+          </button>
+        </div>
+      </div>
+
+      <a href="#" class="repair__show-all">
+        Show all <span class="repair__chevron">⌄</span>
+      </a>
+    </section>
+
+				<h5>SERVICE PRICES</h5>
 		<section class="prices">
 					<div class="price-container">
 						<div class="p-grid">
