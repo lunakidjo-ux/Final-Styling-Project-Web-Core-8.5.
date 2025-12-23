@@ -64,27 +64,27 @@
   <main class="main">
         <header class="header">
         <button class="header__icon header__icon--menu" aria-label="Menu">
-          <img src="./icons/ic-burger.svg" alt="Menu" />
+          <img src="./img/ic-burger.svg" alt="">
         </button>
         <div class="header__logo">
-          <img src="./icons/ic-Logo.svg" alt="CPS Logo" />
+          <img src="./img/ic-Logo.svg" alt="CPS Logo">
         </div>
         <div class="header__icons header__icon--group">
           <button class="header__icon header__icon--call" aria-label="call">
-            <img src="./icons/ic-call.svg" alt="Call icon" />
+            <img src="./img/ic-call.svg" alt="Call icon">
           </button>
           <button class="header__icon header__icon--chat" aria-label="chat">
-            <img src="./icons/ic-chat.svg" alt="Chat icon" />
+            <img src="./img/ic-chat.svg" alt="Chat icon">
           </button>
           <button class="header__icon header__icon--profile" aria-label="profile">
-            <img src="./icons/ic-profile.svg" alt="Profile icon" />
+            <img src="./img/ic-profile.svg" alt="Profile icon">
           </button>
           <div class="divider"></div>
           <button class="header__icon header__icon--repair" aria-label="Repair status">
-            <img src="./icons/ic-Repair.svg" alt="Repair icon" />
+            <img src="./img/ic-Repair.svg" alt="Repair icon">
           </button>
           <button class="header__icon header__icon--search" aria-label="Search">
-            <img src="./icons/ic-search..svg" alt="Search icon" />
+            <img src="./img/ic-search..svg" alt="Search icon">
           </button>
         </div>
       </header>
@@ -183,8 +183,8 @@
       </div>
     </section>
 
-      <h4 class="repair__label">REPAIR OF VARIOUS TYPES OF EQUIPMENT</h4>
     <section class="repair">
+      <h4 class="repair__label">REPAIR OF VARIOUS TYPES OF EQUIPMENT</h4>
       <div class="repair__list swiper" id="repairSWiper">
         <div class="repair-card">
           <span class="repair-card__title">Laptop repair</span>
@@ -215,9 +215,12 @@
         </div>
       </div>
 
-      <a href="#" class="repair__show-all">
-        Show all <span class="repair__chevron">⌄</span>
-      </a>
+       <div class="brands__toggle">
+        <button class="brands__toggle-btn" id="brandsToggle">
+          <img src="./img/ic-arrowDOWN.svg" class="brands__toggle-icon" alt="">
+          <span class="brands__toggle-text">Show all</span>
+        </button>
+      </div>
     </section>
 
 				<h5>SERVICE PRICES</h5>
