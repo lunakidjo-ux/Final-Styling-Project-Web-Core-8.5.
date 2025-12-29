@@ -6,6 +6,8 @@ console.log('It works!')
 
 let brandsSwiper = null
 let repairSwiper = null
+let pricesSwiper = null
+
 
 function swiperOn() {
   // Brands Swiper
@@ -39,6 +41,23 @@ function swiperOn() {
     })
     console.log('Repair Swiper initialized')
   }
+
+  // Prices Swiper
+const pricesSwiperEl = document.querySelector('#pricesSwiper')
+if (pricesSwiperEl && !pricesSwiperEl.swiper) {
+  pricesSwiper = new Swiper('#pricesSwiper', {
+    modules: [Pagination],
+    slidesPerView: 'auto',
+    spaceBetween: 16,
+    freeMode: true,
+    pagination: {
+      el: '#pricesSwiper .swiper-pagination',
+      clickable: true
+    }
+  })
+  console.log('Prices Swiper initialized')
+}
+
 }
 
 function swiperOff() {
@@ -55,6 +74,14 @@ function swiperOff() {
     repairSwiper = null
     console.log('Repair Swiper destroyed')
   }
+
+  // Price Sziper
+  if (pricesSwiper && typeof pricesSwiper.destroy === 'function') {
+  pricesSwiper.destroy(true, true)
+  pricesSwiper = null
+  console.log('Prices Swiper destroyed')
+}
+
 }
 
 function swiperToggle() {
@@ -168,3 +195,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Reinitialize on window resize
 window.addEventListener('resize', swiperToggle)
+
