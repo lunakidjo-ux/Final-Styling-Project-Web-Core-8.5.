@@ -121,8 +121,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const repairText = document.querySelector('.repair__toggle-text')
   const repairArrow = document.querySelector('.repair__toggle-icon')
 
+  console.log(repairList)
+  console.log(repairToggle)
+  console.log(repairText)
+  console.log(repairArrow)
+
+
   console.log('Repair toggle elements:', {
-    repairList: !!repairList,
+    repairList: repairList,
     repairToggle: !!repairToggle,
     repairText: !!repairText,
     repairArrow: !!repairArrow
