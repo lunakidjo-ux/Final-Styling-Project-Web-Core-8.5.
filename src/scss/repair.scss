@@ -14,16 +14,13 @@
 
   &__list {
     width: 100%;
+     padding-left: 16px;
   }
 
   /* =====================
      MOBILE — SWIPER
      ===================== */
-  @media (max-width: 767px) {
-   .repair__list {
-    padding-left: 16px;
-  }
-
+   
   .repair__toggle {
     display: none;
   }
@@ -43,12 +40,25 @@
     padding: 16px;
   }
 
+  .swiper-slide {
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+  .swiper-pagination-bullet {
+  background: #000;
+}
+
   .swiper-pagination {
     margin-top: 16px;
     position: relative;
     text-align: center;
   }
-  }
+  
 
   /* =====================
      TABLET — GRID (3)
