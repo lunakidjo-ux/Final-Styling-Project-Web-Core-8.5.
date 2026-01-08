@@ -8,7 +8,6 @@ let brandsSwiper = null
 let repairSwiper = null
 let pricesSwiper = null
 
-
 function swiperOn() {
   // Brands Swiper
   const brandsSwiperEl = document.querySelector('.brands__swiper')
@@ -43,21 +42,20 @@ function swiperOn() {
   }
 
   // Prices Swiper
-const pricesSwiperEl = document.querySelector('#pricesSwiper')
-if (pricesSwiperEl && !pricesSwiperEl.swiper) {
-  pricesSwiper = new Swiper('#pricesSwiper', {
-    modules: [Pagination],
-    slidesPerView: 'auto',
-    spaceBetween: 16,
-    freeMode: true,
-    pagination: {
-      el: '#pricesSwiper .swiper-pagination',
-      clickable: true
-    }
-  })
-  console.log('Prices Swiper initialized')
-}
-
+  const pricesSwiperEl = document.querySelector('#pricesSwiper')
+  if (pricesSwiperEl && !pricesSwiperEl.swiper) {
+    pricesSwiper = new Swiper('#pricesSwiper', {
+      modules: [Pagination],
+      slidesPerView: 'auto',
+      spaceBetween: 16,
+      freeMode: true,
+      pagination: {
+        el: '#pricesSwiper .swiper-pagination',
+        clickable: true
+      }
+    })
+    console.log('Prices Swiper initialized')
+  }
 }
 
 function swiperOff() {
@@ -77,11 +75,10 @@ function swiperOff() {
 
   // Price Sziper
   if (pricesSwiper && typeof pricesSwiper.destroy === 'function') {
-  pricesSwiper.destroy(true, true)
-  pricesSwiper = null
-  console.log('Prices Swiper destroyed')
-}
-
+    pricesSwiper.destroy(true, true)
+    pricesSwiper = null
+    console.log('Prices Swiper destroyed')
+  }
 }
 
 function swiperToggle() {
@@ -120,21 +117,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const repairToggle = document.querySelector('#repairToggle')
   const repairText = document.querySelector('.repair__toggle-text')
   const repairArrow = document.querySelector('.repair__toggle-icon')
+  const repairCollapsed = document.querySelector('.repair-card--collapsed')
 
-  console.log(repairList)
-  console.log(repairToggle)
-  console.log(repairText)
-  console.log(repairArrow)
-
-
-  console.log('Repair toggle elements:', {
-    repairList: repairList,
-    repairToggle: !!repairToggle,
-    repairText: !!repairText,
-    repairArrow: !!repairArrow
-  })
-
-  if (repairToggle && repairList && repairText && repairArrow) {
+  if (
+    repairToggle &&
+    repairList &&
+    repairText &&
+    repairArrow &&
+    repairCollapsed
+  ) {
     repairToggle.addEventListener('click', (e) => {
       e.preventDefault()
       console.log('Repair toggle clicked')
@@ -144,9 +135,11 @@ document.addEventListener('DOMContentLoaded', () => {
       if (expanded) {
         repairText.textContent = 'Hide'
         repairArrow.classList.add('rotated')
+        repairCollapsed.style.display = 'block'
       } else {
         repairText.textContent = 'Show all'
         repairArrow.classList.remove('rotated')
+        repairCollapsed.style.display = 'none'
       }
     })
   } else {
@@ -201,4 +194,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Reinitialize on window resize
 window.addEventListener('resize', swiperToggle)
-
